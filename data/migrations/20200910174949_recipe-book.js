@@ -1,15 +1,16 @@
 
 exports.up = function(knex) {
-    return knex.schema.createTable('recipes', table => {
-      table.increments()
-      table.string('recipe_name', 255)
+    return knex.schema
+    .createTable('recipes', table => {
+        table.increments()
+        table.string('recipe_name', 255)
         .notNullable()
         .index()
         .uniqe()
     })
     .createTable('recipe_steps', table => {
         table.increments()
-        table.integer('recipe_id')
+        table.integer('recipe_id') 
         .unsigned()
         .notNullable()
         .references('recipes.id')
@@ -49,5 +50,9 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-  
+  return knex.schema
+  .dropTableIfExists('recipe_ingredients')
+  .dropTableIfExists('ingredients')
+  .dropTableIfExists('recipe_steps')
+  .dropTableIfExists('recipes')
 };
