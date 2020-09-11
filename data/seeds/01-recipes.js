@@ -11,4 +11,6 @@ exports.seed = function(knex) {
       recipe_name: 'Simple Roasted Butternut Squash'
     }
   ]
+
+  return knex('recipes').insert(recipes)
 };

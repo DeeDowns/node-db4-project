@@ -6,7 +6,7 @@ exports.up = function(knex) {
         table.string('recipe_name', 255)
         .notNullable()
         .index()
-        .uniqe()
+        .unique()
     })
     .createTable('recipe_steps', table => {
         table.increments()
