@@ -1,51 +1,40 @@
 
 exports.seed = function(knex) {
   const ingredients = [
-    {
-      ingredient_name: 'cooked macaroni',
-      quantity: '3 cups'
+    {//1
+      ingredient_name: 'cooked macaroni'
     },
-    {
-      ingredient_name: 'tuna',
-      quantity: '5 oz'
+    {//2
+      ingredient_name: 'tuna'
     },
-    {
-      ingredient_name: 'condensed cream of chicken soup',
-      quantity: '10.75 oz'
+    {//3
+      ingredient_name: 'condensed cream of chicken soup'
     },
-    {
-      ingredient_name: 'shredded cheddar cheese',
-      quantity: '1 cup'
+    {//4
+      ingredient_name: 'shredded cheddar cheese'
     },
 
-    {
-      ingredient_name: 'self-rising flour',
-      quantity: '1 1/4 cups'
+    {//5
+      ingredient_name: 'self-rising flour'
     },
-    {
-      ingredient_name: 'whole-milk greek yogurt',
-      quantity: '1 cup'
+    {//6
+      ingredient_name: 'whole-milk greek yogurt'
     },
-    
-    {
-      ingredient_name: 'cubed butternut squash',
-      quantity: '1'
+
+    {//7
+      ingredient_name: 'cubed butternut squash'
     },
-    {
-      ingredient_name: 'olive oil',
-      quantity: '2 tablespoons'
+    {//8
+      ingredient_name: 'olive oil'
     },
-    {
-      ingredient_name: 'minced garlic',
-      quantity: '2 cloves'
+    {//9
+      ingredient_name: 'minced garlic'
     },
-    {
-      ingredient_name: 'salt',
-      quantity: '1 pinch'
+    {//10
+      ingredient_name: 'salt'
     },
-    {
-      ingredient_name: 'pepper',
-      quantity: '1 pinch'
+    {//11
+      ingredient_name: 'pepper'
     },
   ]
 

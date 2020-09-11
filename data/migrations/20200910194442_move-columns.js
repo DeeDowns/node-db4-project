@@ -5,12 +5,13 @@ exports.up = function(knex) {
         table.dropColumn('quantity')
     })
     .table('recipe_ingredients', table => {
-        table.integer('quantity')
-        .unsigned()
+        table.string('quantity', 255)
         .notNullable()
+        .defaultTo('1')
         table.string('unit_of_measurement', 255)
         .notNullable()
         .index()
+        .defaultTo('1')
     })
    
   
